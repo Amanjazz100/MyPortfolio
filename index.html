@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
@@ -24,11 +23,10 @@
                 <a href="#"> ABOUT</a>
                 <a href="#"> SERVICES</a>
                 <a href="#"> CONTACT</a>
-                <a href="#"> HIRE ME</a>
+                <a href="#" id="hire" onclick="downloadResume()"> HIRE ME</a>
 
                 <i class="fa fa-search"></i>
                 <i class="fa fa-moon-o"></i>
-
             </div>
         </nav>
 
@@ -36,19 +34,17 @@
             <div class="left">
                 <h2>Hi,</h2><br>
                 <h2>I'm Aman Jaiswal</h2>
-            <h1>Freelancer</h2>
-            <p>
-                I love web Development and Software Development and have been working 
-                on my portfolio since 2021. I can give your business a new
-                Creative start right away!
- 
-
-            </p>
-            <br><br>
-            <div>
-                <a href="#" id="hire">Hire me</a>
-                <a href="#" id="myp">My Portfolio</a>
-            </div>
+                <h1>Freelancer</h2>
+                <p>
+                    I love web Development and Software Development and have been working 
+                    on my portfolio since 2021. I can give your business a new
+                    Creative start right away!
+                </p>
+                <br><br>
+                <div>
+                    <a href="#" id="hire" onclick="downloadResume()">Hire me</a>
+                    <a href="#" id="myp">My Portfolio</a>
+                </div>
             </div>
             <div class="right">
                 <img src="myphotos.png" alt="my image">
@@ -56,95 +52,102 @@
         </div>
     </header>
     
-<section id="bio">
-    <div class="leftbio">
-        <img src="img2.jpg" alt="myimage2">
-    </div>
-    <div class="rightbio">
-        <div>
-            <p id="biography"> <h2>MY BIOGRAPHY</h2></p>
-        <h1>Transforming Ideas into Engaging Digital Experiences</h1>
-        <p>Welcome to my personal portfolio website! I'm a web developer and software engineer with a passion for crafting captivating digital experiences that leave a lasting impact. By blending cutting-edge design and powerful code, I transform ideas into stunning websites that engage users and exceed expectations. Whether it's creating seamless user interfaces or developing complex back-end systems, my expertise in HTML, CSS, JavaScript, Python, and more ensures exceptional results every time. I am ready to work with you, bringing innovation and technical excellence to your projects. Let's collaborate and embark on a remarkable digital journey together. Don't miss the chance to connect with me through the provided contact form. Get ready to take your online presence to new heights</p>
-        <hr>
+    <section id="bio">
+        <div class="leftbio">
+            <img src="img2.jpg" alt="myimage2">
         </div>
-
-        <div class="info">
+        <div class="rightbio">
             <div>
-                <p><b>Name: </b>Aman Jaiswal</p>
-                <p><b>E-Mail:</b>amanjaiswal262001@gmail.com</p>
+                <p id="biography"> <h2>MY BIOGRAPHY</h2></p>
+                <h1>Transforming Ideas into Engaging Digital Experiences</h1>
+                <p>Welcome to my personal portfolio website! I'm a web developer and software engineer with a passion for crafting captivating digital experiences that leave a lasting impact. By blending cutting-edge design and powerful code, I transform ideas into stunning websites that engage users and exceed expectations. Whether it's creating seamless user interfaces or developing complex back-end systems, my expertise in HTML, CSS, JavaScript, Python, and more ensures exceptional results every time. I am ready to work with you, bringing innovation and technical excellence to your projects. Let's collaborate and embark on a remarkable digital journey together. Don't miss the chance to connect with me through the provided contact form. Get ready to take your online presence to new heights</p>
+                <hr>
             </div>
-            <div>
-                <p><b>From: </b>Uttar Pradesh, India</p>
-                <p><b>Phone no: </b>7068660266</p>
+
+            <div class="info">
+                <div>
+                    <p><b>Name: </b>Aman Jaiswal</p>
+                    <p><b>E-Mail:</b>amanjaiswal262001@gmail.com</p>
+                </div>
+                <div>
+                    <p><b>From: </b>Uttar Pradesh, India</p>
+                    <p><b>Phone no: </b>7068660266</p>
+                </div>
+            </div>
+
+            <div id="follow">
+                <p><b>Follow me on: </b>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube"></i>
+            </p>
+            </div>
+
+            <div class="link-h">
+                <a href="#" id="hire" onclick="downloadResume()">Hire Me</a>
+                <a href="#" id="cv">Download CV</a>
             </div>
         </div>
+    </section>
 
+    <section id="services">
+        <div class="intro">
+            <h1>What I do for you?</h1>
+            <div class="card">
+                <div class="cardbody">
+                    <i class="fa fa-lock"></i>
+                    <h3>Software Developer</h3>
+                    <p>Innovative software developer crafting efficient solutions with multiple programming languages. 
+                    </p>
+                </div>
+                <div class="cardbody">
+                    <i class="fa fa-camera"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Creative graphic designer crafting captivating visuals with artistic expertise.</p>
+                </div>
+                <div class="cardbody">
+                    <i class="fa fa-lock"></i>
+                    <h3>Cyber Security</h3>
+                    <p>Dedicated cyber security professional safeguarding digital assets with expertise.
+                    </p>
+                </div>
+            </div>
 
-        <div id="follow">
-            <p><b>Follow me on: </b>
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-whatsapp"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-youtube"></i>
-        </p>
+            <div class="card">
+                <div class="cardbody">
+                    <i class="fa fa-lock"></i>
+                    <h3>Web Developer</h3>
+                    <p>Skilled web developer building dynamic websites with expertise in various technologies.</p>
+                </div>
+                <div class="cardbody">
+                    <i class="fa fa-camera"></i>
+                    <h3>UI/UX Designer</h3>
+                    <p>Passionate UI/UX designer creating intuitive and engaging user experiences.</p>
+                </div>
+                <div class="cardbody">
+                    <i class="fa fa-lock"></i>
+                    <h3>Ethical Hacker</h3>
+                    <p>Dedicated ethical hacker securing systems, identifying vulnerabilities, strengthening defenses.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="link-h">
-            <a href="#" id="hire">Hire Me</a>
-            <a href="#" id="cv">Download CV</a>
-        </div>
-    </div>
-</section>
+    <script>
+        function downloadResume() {
+            // Create an invisible link element
+            var link = document.createElement('a');
+            link.href = 'resume2.pdf'; // Replace with the actual path to your PDF file
+            link.download = 'Aman_Jaiswal_Resume.pdf';
 
+            // Trigger a click on the link to start the download
+            link.click();
 
-
-
-<Section id="services">
-<div class="intro">
-    <h1>What i do for you ?</h1>
-    <div class="card">
-        <div class="cardbody">
-            <i class="fa fa-lock"></i>
-            <h3>Software Developer</h3>
-            <p>Innovative software developer crafting efficient solutions with multiple programming languages. 
-            </p>
-        </div>
-        <div class="cardbody">
-            <i class="fa fa-camera"></i>
-            <h3>Graphic Design</h3>
-            <p>Creative graphic designer crafting captivating visuals with artistic expertise.</p>
-        </div>
-        <div class="cardbody">
-            <i class="fa fa-lock"></i>
-            <h3>Cyber Security</h3>
-            <p>Dedicated cyber security professional safeguarding digital assets with expertise.
-            </p>
-        </div>
-        
-    </div>
-
-    <div class="card">
-        <div class="cardbody">
-            <i class="fa fa-lock"></i>
-            <h3>Web Developer</h3>
-            <p>Skilled web developer building dynamic websites with expertise in various technologies.</p>
-        </div>
-        <div class="cardbody">
-            <i class="fa fa-camera"></i>
-            <h3>UI/UX Designer</h3>
-            <p>Passionate UI/UX designer creating intuitive and engaging user experiences.</p>
-        </div>
-        <div class="cardbody">
-            <i class="fa fa-lock"></i>
-            <h3>Ethical Hacker</h3>
-            <p>Dedicated ethical hacker securing systems, identifying vulnerabilities, strengthening defenses.</p>
-        </div>
-        
-    </div>
-
-    
-</div>
-</Section>
+            // Remove the link from the body
+            document.body.removeChild(link);
+        }
+    </script>
 </body>
 </html>
